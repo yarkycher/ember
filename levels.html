@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="shortcut icon" href="PHOTO/heart.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Game | Ember</title>
+   <link rel="stylesheet" href="CSS/levels.css">
+<body>
+   <div class="container">
+      <div class="column1">
+         <img src="PHOTO/kolons1.png" draggable="false" width="4000px" style="opacity: 1;">
+      </div>
+      <div class="column2">
+         <img src="PHOTO/kolons2.png" draggable="false" width="5000px" style="opacity: 1;">
+      </div>
+      <div class="column3">
+         <img src="PHOTO/kolons3.png" draggable="false" width="4000px" style="opacity: 1;">
+      </div>
+      <div class="column4">
+         <img src="PHOTO/kolons4.png" draggable="false" width="5000px" style="opacity: 1;">
+      </div>
+   </div>
+   <div class="quest" id="quest">
+      <div class="question" id="question">
+         <div class="contik">
+            <span>Pause</span>
+         </div>
+         <div class="contik2">
+            <div class="back" id="backer">
+               <img src="PHOTO/backn.png" width="50px" height="50px">
+            </div>
+            <div class="nexter" id="nexter">
+               <img src="PHOTO/play.png" width="45px" height="45px">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="section">
+      <div class="ember">
+         <div class="em berText" id="text">
+            Ember
+         </div>
+      </div>
+      <div class="photos">
+         <img src="PHOTO/frame2.png" class="photo2" width="430px" id="photo2" style="margin-top: 5px;">
+      </div>
+      <div class="bg">
+      
+      </div>
+      <div class="levels" id="levels">
+         
+         <div class="mainText">
+            Levels
+         </div>
+         <div class="count">
+            <div class="lvl one" id="level1" onclick="goToPage('leveleasy.html')">1</div>
+            <div class="lvl two" id="level2" onclick="goToPage('levelmedium.html')">2</div>
+            <div class="lvl three" id="level3" onclick="goToPage('levelextreme.html')">3</div>
+         </div>
+      </div>
+      
+   </div>
+   <script src="JS/levels.js"></script>
+</body>
+
+</html>

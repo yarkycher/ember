@@ -1,0 +1,195 @@
+* {
+   box-sizing: border-box;
+}
+
+* ::selection {
+   background: rgba(0, 0, 0, 0);
+   color: orange;
+}
+.quest {
+   background-color: rgba(0, 0, 0, 0.788);
+   position: absolute;
+   display: none;
+   width: 100%;
+   height: 100%;
+   z-index: 125;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(1px);
+}
+
+.quest:hover {
+   cursor: pointer;
+}
+
+.question {
+   width: 320px;
+   height: 150px;
+   background-image: url("PHOTO/brick.jpg");
+   background-position: center;
+   border: 5px rgba(73, 73, 73, 0.671);
+   border-style: ridge;
+   font-family: "Press Start 2P", system-ui;
+   color: white;
+   text-align: center;
+   font-size: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.question:hover {
+   cursor: default;
+}
+html,
+body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: black;
+}
+.ember {
+   font-family: "Press Start 2P", system-ui;
+   font-size: 32px;
+   color: white;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 160px;
+   position: absolute;
+   z-index: 10;
+}
+.conter {
+   position: absolute;
+   z-index: 11;
+   top: 160px;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+.choose {
+   min-height: 400px;
+   height: auto;
+   width: 400px;
+   margin: 0 auto;
+   border: 1px solid white;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+.chooser {
+   width: 100%;
+   height: 100px;
+   display: flex;
+   align-items: end;
+   font-family: "Press Start 2P", system-ui;
+   font-size: 28px;
+   color: white;
+   justify-content: center;
+   user-select: none;
+   margin-bottom: 30px;
+}
+.chooses {
+   width: 100%;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   font-family: "Press Start 2P", system-ui;
+   font-size: 28px;
+   color: white;
+   justify-content: center;
+}
+.chooses span {
+   width: 300px;
+   text-align: center;
+}
+.chooses a:hover {
+   color: orange !important;
+   cursor: pointer;
+}
+
+.column1 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: -200px;
+   left: 0;
+   z-index: 5;
+   animation: column1 10s infinite linear;
+   filter: brightness(0.6);
+}
+
+.column2 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   animation: column2 22s infinite linear;
+   filter: brightness(0.05);
+}
+
+.column3 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 75px;
+   left: 0;
+   z-index: 3;
+   animation: column3 12s infinite linear;
+   filter: brightness(0.1);
+}
+
+.column4 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: -200px;
+   left: 0;
+   z-index: 4;
+   animation: column4 10s infinite linear;
+   filter: brightness(0.3);
+}
+
+.container {
+   position: absolute;
+   margin-top: -100px;
+}
+
+@keyframes column1 {
+   0% {
+      transform: translateX(-2250px);
+   }
+
+   100% {
+      transform: translateX(0px);
+   }
+}
+@keyframes column2 {
+   0% {
+      transform: translateX(-1150px);
+   }
+
+   100% {
+      transform: translateX(0px);
+   }
+}
+@keyframes column3 {
+   0% {
+      transform: translateX(-876px);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+@keyframes column4 {
+   0% {
+      transform: translateX(-1148px);
+   }
+   
+   100% {
+      transform: translateX(0);
+   }
+}

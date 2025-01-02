@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ember | Extreme</title>
+   <link rel="stylesheet" href="CSS/leveleasy.css">
+   <link rel="stylesheet" href="CSS/levelextreme.css">
+   <link rel="shortcut icon" href="PHOTO/heart.ico">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="container">
+      <div class="column1">
+         <img src="PHOTO/kolons1.png" draggable="false" width="4000px" style="opacity: 1;">
+      </div>
+      <div class="column2">
+         <img src="PHOTO/kolons2.png" draggable="false" width="5000px" style="opacity: 1;">
+      </div>
+      <div class="column3">
+         <img src="PHOTO/kolons3.png" draggable="false" width="4000px" style="opacity: 1;">
+      </div>
+      <div class="column4">
+         <img src="PHOTO/kolons4.png" draggable="false" width="5000px" style="opacity: 1;">
+      </div>
+   </div>
+   <div class="quest" id="quest">
+      <div class="question" id="question">
+         <div class="contik">
+            <span>Pause</span>
+         </div>
+         <div class="contik2">
+            <div class="back" id="backer">
+               <img src="PHOTO/backn.png" width="50px" height="50px">
+            </div>
+            <div class="nexter" id="nexter">
+               <img src="PHOTO/play.png" width="45px" height="45px">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="stat" id="statistics">
+
+      <div class="textt">
+         Statistics
+      </div>
+
+      <div class="hearts" id="hearts">
+         <img src="PHOTO/heart.ico" width="25px" style="margin-top: 4px; margin-right: 5px;"><span
+            id="heartsCount">0</span>
+      </div>
+
+      <div class="coins" id="coins">
+         <img src="PHOTO/coin.png" width="25px" style="margin-top: 4px; margin-right: 5px;"><span
+            id="coins_count">0</span>
+      </div>
+      <div class="shield" id="shields">
+         <img src="PHOTO/shield.png" width="25px" style="margin-top: 4px; margin-right: 5px;"><span
+            id="shield_count">0</span>
+      </div>
+      <div class="buy" id="buy">
+         Buy
+      </div>
+      <div class="bulletV" id="bullets">
+         <img src="PHOTO/bullet.png" width="25px" style="margin-top: 4px; margin-right: 5px;"><span
+            id="bullet_count">0</span>
+      </div>
+
+   </div>
+   <div class="misions">
+      <div class="textt">
+         Mission
+      </div>
+      <div class="mission">
+         <i class="material-icons" id="mis5">star_border</i>
+         <span class="zadanije">Zabijte Ember</span>
+      </div>
+   </div>
+   <div class="complete" id="complete">
+      Complete!
+   </div>
+   <div class="miniMap">
+      <div class="textt" style="margin-top: 15px;">
+         Logs
+      </div>
+      <div class="mission">
+         <i class="material-icons" id="mis5"></i>
+         <span class="zadanije">Bot speed: <span id="speederV"></span></span>
+      </div>
+      <div class="mission">
+         <i class="material-icons" id="mis5"></i>
+         <span class="zadanije">Cooldown shoot: <span id="koolerV"></span></span>
+      </div>
+      <div class="mission">
+         <i class="material-icons" id="mis5"></i>
+         <span class="zadanije">Attack boss speed: <span id="blockspeed">3</span></span>
+      </div>
+   </div>
+   <div class="coordinats">
+      <span id="poX">x: 0; y: 0</span>
+   </div>
+   <div class="header">
+      Ember
+   </div>
+
+
+
+   <div class="contg">
+      <div class="end" id="end">
+         <div class="cont">
+            <span>G</span><span>a</span><span>m</span><span>e</span>
+            <span> </span>
+            <span style="margin-left: 10px;">O</span><span>v</span><span>e</span><span>r</span>
+         </div>
+         <div class="contx" style="margin-top: 10px;">
+            <a class="next" href="levels.html">
+               Levels
+            </a>
+         </div>
+         <div class="contxw" style="margin-top: 10px;">
+            <a class="nextw" style="font-size: 15px;" onclick="location.reload()">
+               Restart
+            </a>
+         </div>
+      </div>
+      <div class="endw" id="endw">
+         <div class="contw">
+            <span>C</span><span>o</span>
+            <span>n</span><span>g</span><span>r</span><span>a</span><span>t</span><span>u</span><span>l</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span>
+         </div>
+         <div class="contxw">
+            <a class="nextw" href="levels.html">
+               Levels
+            </a>
+         </div>
+      </div>
+
+      <div class="conttt">
+         <div class="healthBar" id="healthBar">
+
+         </div>
+      </div>
+      <div class="poleForGame" id="game">
+         <div class="player rightPlayer" id="player">
+         </div>
+         <div class="namer" id="namer">
+
+         </div>
+         <div class="namerb" id="namerb">
+         
+         </div>
+         <div class="shieldp" id="shieldp">
+
+         </div>
+         
+         <div class="bot" id="bot" draggable="false" width="65px" height="80px">
+         
+         </div>
+         
+
+         <div class="contdoors">
+            <div class="doors" id="doors"></div>
+         </div>
+      </div>
+      
+   </div>
+   <div class="timer">
+      <span id="timer"></span>
+   </div>
+   <script src="JS/levelextreme.js"></script>
+</body>
+
+</html>

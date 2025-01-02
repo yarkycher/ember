@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Ember</title>
+    <link rel="shortcut icon" href="PHOTO/heart.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+            <img src="PHOTO/kolons1.png" draggable="false" width="4000px" style="opacity: 1;">
+        </div>
+        <div class="column2">
+            <img src="PHOTO/kolons2.png" draggable="false" width="5000px" style="opacity: 1;">
+        </div>
+        <div class="column3">
+            <img src="PHOTO/kolons3.png" draggable="false" width="4000px" style="opacity: 1;">
+        </div>
+        <div class="column4">
+            <img src="PHOTO/kolons4.png" draggable="false" width="5000px" style="opacity: 1;">
+        </div>
+    </div>
+    <div class="ember">
+        <span id="ember">
+            Ember
+        </span>
+    </div>
+    <div class="section">
+        <div class="rules" id="rules">
+            <div class="maintext">
+                Rules
+            </div>
+            <div class="dropdown"> <!-- первый -->
+                <div class="dropdown-header">Jak hrát?</div>
+                <div class="dropdown-content">
+                    <ul style="text-align: start;">
+                        <li>🕹️ <span style="color: orange;">Ovládání</span> je na klávesnici pomoci šipek: <br>
+                            <i class="material-icons">arrow_back</i>
+                            <i class="material-icons">arrow_upward</i>
+                            <i class="material-icons">arrow_forward</i>
+                            nebo WASD
+                        </li>
+                        <li>❤️ Počet <span style="color: red;">životu</span> závisí na úrovni obtížnosti</li>
+                        <li>🎮 Hrajete hračem, který musí dosáhnout východu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown"> <!-- второй -->
+                <div class="dropdown-header">Úrovně obtížnosti</div>
+                <div class="dropdown-content">
+                    <ul style="text-align: start;">
+                        <ul style="text-align: start;">
+                            <li>🧝<span style="color: green;"> Easy</span> - Máte 3 životy</li>
+                            <li>🤨<span style="color: orange;"> Medium</span> - Máte 2 životy</li>
+                            <li>👿<span style="color: purple;"> Extreme</span> - Máte 1 život</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown"> <!-- третий -->
+                <div class="dropdown-header">Bonusy</div>
+                <div class="dropdown-content">
+                    <ul style="text-align: start;">
+                        <li>
+                            <img src="PHOTO/coin.png" width="22px"><span style="color: gold; margin-left: 20px;">Coins</span>                 
+                        </li>
+                        <li>
+                            <span style="color: lightblue;">🛡️ Štít:</span> Chrání vás od 1 damage. Můžete koupit za coiny
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contNext">
+                <button class="next" id="levels">
+                    Back
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

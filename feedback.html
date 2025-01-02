@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Feedback | Ember</title>
+   <link rel="stylesheet" href="CSS/feedback.css">
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+      <div class="column1">
+         <img src="PHOTO/kolons1.png" draggable="false" width="4000px" style="opacity: 1;">
+      </div>
+      <div class="column2">
+         <img src="PHOTO/kolons2.png" draggable="false" width="5000px" style="opacity: 1;">
+      </div>
+      <div class="column3">
+         <img src="PHOTO/kolons3.png" draggable="false" width="4000px" style="opacity: 1;">
+      </div>
+      <div class="column4">
+         <img src="PHOTO/kolons4.png" draggable="false" width="5000px" style="opacity: 1;">
+      </div>
+   </div>
+   <div class="feedback">
+      <div class="dchooser">
+         <div class="maintext">
+            Feedback
+         </div>
+         <div id="feedback">
+            <div class="rating">
+               <label>Rate coding:</label>
+               <span class="star" data-value="1">&#9733;</span>
+               <span class="star" data-value="2">&#9733;</span>
+               <span class="star" data-value="3">&#9733;</span>
+               <span class="star" data-value="4">&#9733;</span>
+               <span class="star" data-value="5">&#9733;</span>
+            </div>
+         
+            <div class="rating">
+               <label>Rate emotions:</label>
+               <span class="star" data-value="1">&#9733;</span>
+               <span class="star" data-value="2">&#9733;</span>
+               <span class="star" data-value="3">&#9733;</span>
+               <span class="star" data-value="4">&#9733;</span>
+               <span class="star" data-value="5">&#9733;</span>
+            </div>
+         
+            <div class="rating">
+               <label>Rate textures:</label>
+               <span class="star" data-value="1">&#9733;</span>
+               <span class="star" data-value="2">&#9733;</span>
+               <span class="star" data-value="3">&#9733;</span>
+               <span class="star" data-value="4">&#9733;</span>
+               <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <div class="rating">
+               <label>Rate gameplay:</label>
+               <span class="star" data-value="1">&#9733;</span>
+               <span class="star" data-value="2">&#9733;</span>
+               <span class="star" data-value="3">&#9733;</span>
+               <span class="star" data-value="4">&#9733;</span>
+               <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <form id="feedbackForm" action="https://formspree.io/f/mnnqyezw" method="POST">
+               <input type="hidden" name="code_rating" id="code_rating">
+               <input type="hidden" name="emotions_rating" id="emotions_rating">
+               <input type="hidden" name="textures_rating" id="textures_rating">
+               <input type="hidden" name="gameplay_rating" id="gameplay_rating">
+            
+               <!-- Поля для email и сообщения -->
+               <label class="rating">
+                  Your name:
+                  <input class="input" type="text" name="name" required maxlength="8">
+               </label>
+               
+               <label class="rating">
+                  Your message:
+                  <input name="message" maxlength="14" required class="input"></input>
+               </label>
+               <button type="submit" class="submitFeedback" id="submitFeedback">Send a feedback</button>
+            </form>
+            <button class="submitFeedback" id="back">Go back</button>
+         </div>
+      </div>
+   </div>
+   <script src="JS/feedback.js"></script>
+</body>
+</html>
